@@ -1,0 +1,54 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: fantasy;
+}
+
+
+
+.nav-menu {
+    list-style: none;
+
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: forestgreen;
+}
+nav {
+    background-color:springgreen;
+    padding: 1rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* style the links */
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    background-color:lawngreen;
+    transition-property: backround-color 0.6s ease;
+}
+.nav-menu a:hover {
+    background-color: firebrick ;
+}
+
+.logo {
+    color: forestgreen;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+}

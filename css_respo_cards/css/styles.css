@@ -40,7 +40,7 @@ Mobile styles - (default - No media Query
 Single Column Layout
 ================================================================== */
 
-.card-cotainer {
+.card-container {
     display: grid;
     grid-template-columns: 1fr; /* just for mobile: 1 column */
     gap: 20px;
@@ -115,3 +115,64 @@ footer {
     padding: 20px;
     opacity: 0.8;
 }
+
+/* =========================================
+Tablet Styles 
+2 collumn layout for tablets (768 px and wider)
+============================================ */
+@media (min-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr; /* This is the tablet 2 collumns*/
+        gap: 25px;
+        padding: 0 20px;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    .card button {
+        width: auto; /* button no longer full width*/
+        padding: 12px 32px;
+    }
+
+
+} /* Closing tablet media query */
+
+/* =================================
+Desktop styles
+3 collumns for desktops 1024px and wider
+=============================== */
+@media (min-width: 1024px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        padding: 0;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+    }
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    .card img {
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+
+/* =============================
+Responsive Typograophy 
+adjust  font sizes for readablitity
+================================ */
+
+
+
+
+/* =============================
+Print designs
+================================ */

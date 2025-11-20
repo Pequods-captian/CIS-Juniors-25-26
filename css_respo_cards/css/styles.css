@@ -1,0 +1,117 @@
+/* ========================================================
+Reset and base styles 
+=========================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* ==========================================
+Header styles
+============================================= */
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* ===============================================================
+Mobile styles - (default - No media Query
+Single Column Layout
+================================================================== */
+
+.card-cotainer {
+    display: grid;
+    grid-template-columns: 1fr; /* just for mobile: 1 column */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* ==========================================
+Card Component Styles
+============================================= */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+        /* makes it look like it lifts with stronger shadow */
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    /* Object-fit: cover; Insures that imgs fill the space without distortion */
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    /* Higher line-height improves readability */
+}
+
+.card button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%; /* full widrh button on mobile */
+}
+
+.card button:hover {
+    transform: translateY(-2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ====================================================
+Footer styles
+======================================================= */
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    padding: 20px;
+    opacity: 0.8;
+}
